@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .avatar{
+            display: inline-block;
+            width: 36px;
+            height: 36px;
+            border: solid 1px black;
+            border-radius: 50%;
+            overflow: hidden;
+        }
+        .avatar img{
+            height: 100%;
+        }
+        .inf-right{
+            display: inline-block;
+            width: 70%;
+        }
+        .action-all{
+            width: 100%;
+        }
+        .action{
+            width: 33.33%;
+            border: solid 1px black;
+            border-radius: 2px;
+            text-align: center;
+        }
+        .user-inf-last{
+            position: relative;
+            width: 100%;
+        }
+        .avatar2{
+            position: absolute;
+            top: 2px;
+            width: 30px;
+            height: 30px; 
+            overflow: hidden;
+            border: solid 1px black;
+            border-radius: 50%;
+        }
+        .avatar2 img{
+            height: 100%;
+        }
+        .input{
+            position: absolute;
+            top: 10px;
+            width: 100%;
+            left: 50px;
+        }
+        .input input{
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="user-inf">
+            <div class="avatar">
+                <img src="images/tac-dung-phu.jpg" alt="">
+            </div>
+            <div class="inf-right">
+                <div class="name">Nguyen Lam</div>
+                <div class="time">52 phut</div>
+            </div>
+        </div>
+        <div class="content">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis atque sapiente, iure hic et odio commodi ipsum non ipsam nostrum perspiciatis, consectetur magnam inventore suscipit saepe cum nisi rem earum.
+        </div>
+        <div class="image-1">
+            <img src="images/tac-dung-phu.jpg" alt="">
+        </div>
+        <table class="action-all">
+            <tr>
+                <td class="action">thich</td>
+                <td class="action">binh luan</td>
+                <td class="action">chia se</td>
+            </tr>
+        </table>
+        <div class="user-inf-last">
+            <div class="avatar2">
+                <img src="images/tac-dung-phu.jpg" alt="">
+            </div>
+            <div class="input">
+                <input placeholder="Viết bình luận">
+            </div>
+        </div>
+    </div>
+</body>
+</html>

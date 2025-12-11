@@ -1,0 +1,34 @@
+.mega-menu{
+    background-color: #28b04a;
+    padding: 10px;
+    position: relative;
+    height: 60px;
+}
+.btn-menu-wrapper > span{
+    padding: 20px;
+    border: solid 2px #fff;
+    color: #fff;
+    display: inline-block;
+}
+.btn-menu-wrapper{
+    position: absolute;
+    display: inline-block;
+}
+.btn-menu-wrapper:hover{
+    height: 100px;
+}
+.btn-menu-wrapper:hover  > span + div{
+    display: block;
+}
+.btn-menu-wrapper > span + div{
+    border: solid 1px #000;
+    display: none;
+    position: absolute;
+    top: 79px;
+}
+.btn-menu-wrapper > span + div > div{
+    padding: 8px 15px;
+}
+.btn-menu-wrapper > span + div > div + div{
+    border-top: 1px solid #000;
+}
