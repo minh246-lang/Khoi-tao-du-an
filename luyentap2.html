@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+        }
+        p{
+            margin: 0;
+            padding: 0;
+        }
+        ul{
+            display: none;
+            position: absolute;
+            list-style: none;
+            border: none;
+            padding: 0;
+            margin-top: 20px;
+            box-shadow: 0px 4px 2px 0px rgba(0, 0, 0, 0.05);
+        }
+        li{
+            padding: 10px;
+            color: #333;
+        }
+        .container{
+            box-shadow: 0px 4px 2px 0px rgba(0, 0, 0, 0.05);
+        }
+        .menu-top{
+            display: flex;
+            background-color: #183883;
+            height: 40px;
+        }
+        .content{
+            display: flex;
+            width: 100%;
+            max-width: 1100px;
+            color: aliceblue;
+            align-items: center;
+            justify-content: space-between;
+            margin: auto;
+        }
+        .content-item{
+            color: #1fb4ff;
+        }
+        .mega-menu{
+            display: flex;
+            height: 120px;
+        }
+        .avarta{
+            display: inline-block;
+            width: 59px;
+            height: 68px;
+            border: solid 1px black;
+        }
+        .mega-menu{
+            display: flex;
+            width: 100%;
+            max-width: 1100px;
+            color: #333;
+            align-items: center;
+            justify-content: space-between;
+            margin: auto;
+        }
+        .btn-menu-icon{
+            background-color: rgb(0, 147, 221);
+            padding: 11px;
+            border-radius: 30px;
+            color: aliceblue;
+        }
+        .btn-menu-wrapper:hover{
+            color: #1fb4ff;
+            cursor: pointer;
+        }
+        .btn-menu-wrapper:hover>span+ul {
+            display: block;
+        }
+        .menu-cons{
+            background-color: #fff;
+        }
+        .btn-menu-wrapper{
+            padding: 20px;
+        }
+        .menu-con:hover{
+            color: #1fb4ff; 
+            background-color: #cfe2ff;
+        }
+        .container1{
+            position: relative;
+        }
+        .text-banner{
+            position: absolute;
+            top: 40px;
+            left: 300px;
+            width: 800px;
+            height: 250px;
+            color: #fff;
+        }
+        .tx-1{
+            font-size: 20px;
+            padding: 20px;
+            position: absolute;
+            left: 120px;
+
+        }
+        .tx-2{
+            font-size: 56px;
+            padding: 10px;
+            position: absolute;
+            top: 60px;
+        }
+        .tx-3{
+            font-size: 56px;
+            padding: 10px;
+            position: absolute;
+            top: 140px;
+        }
+        .tx-4{
+            font-size: 20px;
+            padding: 10px;
+            position: absolute;
+            top: 235px;
+            left: 65px;
+        }
+        .btn-text{
+            font-size: 16px;
+            padding: 10px;
+            position: absolute;
+            top: 290px;
+            left: 120px;
+            background-color: #183883;
+            color: #fff;
+            border-radius: 40px
+        }
+        .btn-text:hover{
+            background-color: aliceblue;
+            color: #1fb4ff;
+        }
+        .container2{
+            background-color: #ececec;
+            height: 600px;
+            margin: 0;
+            padding: 0;
+        }
+        .banner-sm-all{
+            display: flex;
+            padding-top: 60px;
+            padding-left: 160px;
+            align-items: center;
+        }
+        .banner-sm{
+            width: 200px;
+            height: 160px;
+            background-color: #fff;
+            margin-right: 20px;
+            border-radius: 15px;
+            font-size: 20px;
+            position: relative;
+        }
+        .text-a{
+            position: absolute;
+            bottom: 20px;
+            left: 38px;
+        }
+        .text-b{
+            position: absolute;
+            bottom: 20px;
+            left: 28px;
+        }
+        .banner-md-all{
+            display: flex;
+            padding-left: 86px;
+            padding-top: 60px;
+        }
+        .banner-md{
+            width: 592px;
+            height: 280px;
+            background-color: #fff;
+            margin-left: 20px;
+            border-radius: 10px;
+        }
+        .banner-md:hover{
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="menu-top">
+            <div class="content">
+                <p>Công ty cổ phần sách và thiết bị giáo dục Miền Bắc - Đơn vị thành viên của Nhà xuất bản Giáo dục Việt Nam</p>
+                <p class="content-item">Địa chỉ tìm mua sách</p>
+            </div>
+        </div>
+        <div class="mega-menu">
+            <div class="avatar">
+                <img src="https://stbmienbac.vn/template/images/logo.png" alt="">
+            </div>
+            <div class="btn-menu-wrapper">
+                <span>Trang chu</span>
+            </div>
+            <div class="btn-menu-wrapper">
+                <span>Tin tuc</span>
+                <ul class="menu-cons">
+                    <li class="menu-con">Tin tuc nha san xuat</li>
+                    <li class="menu-con">Tin tuc khac</li>
+                    <li class="menu-con">Tin tuc ve cong ty</li>
+                </ul>
+            </div>
+            <div class="btn-menu-wrapper">
+                <span>San Pham</span>
+                <ul class="menu-cons">
+                    <li class="menu-con">Thiet bi giao duc</li>
+                    <li class="menu-con">Sach tham khao</li>
+                    <li class="menu-con">Sach bai tap</li>
+                    <li class="menu-con">Sach giao khoa</li>
+                    <li class="menu-con">Sach tri tue</li>
+                </ul>
+            </div>
+            <div class="btn-menu-wrapper">
+                <span>Ve Chung Toi</span>
+            </div>
+            <div class="btn-menu-wrapper">
+                <span>Livestream</span>
+            </div>
+            <div class="btn-menu-wrapper">
+                <span>Quan He Co Dong</span>
+            </div>
+            <div class="btn-menu-wrapper">
+                <span>Lien He</span>
+            </div>
+            <div class="btn-menu-icon">
+                <span>Gio Hang</span>
+            </div>
+        </div>
+    </div>
+    <div class="container1">
+        <div class="text-banner">
+            <p class="tx-1">BO SACH GIAO KHOA</p>
+            <P class="tx-2">KET NOI TRI THUC</P>
+            <P class="tx-3">VOI CUOC SONG</P>
+            <P class="tx-4">Dong hanh cung be - chao don nam hoc moi</P>
+            <button class="btn-text">DANG KY TU VAN MUA SACH</button>
+        </div>
+        <img src="images/banner-img-1.png" alt="">
+    </div>
+    <div class="container2">
+        <div class="banner-sm-all">
+            <div class="banner-sm">
+                <p class="text-a">Sach tham khao</p>
+            </div>
+            <div class="banner-sm">
+                <p class="text-a">Thiet bi giao duc</p>
+            </div>
+            <div class="banner-sm">
+                <p class="text-a">San pham moi</p>
+            </div>
+            <div class="banner-sm">
+                <p class="text-b">San pham giao duc</p>
+            </div>
+        </div>
+        <div class="banner-md-all">
+            <div class="banner-md">
+                <img src="images/banner-bt-1-1.png" alt="">
+            </div>
+            <div class="banner-md">
+                <img src="images/banner-bt-2-1.png" alt="">
+            </div>
+        </div>
+    </div>
+</body>
+</html>

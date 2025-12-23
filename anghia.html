@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+        }
+        .mega-menu {
+            background-color: #00a3e8;
+            padding: 10px;
+            position: relative;
+            height: 60px;
+            display: flex;
+            justify-content: center;
+        }
+        .mega-menu-wrapper{
+            width: 100%;
+            max-width: 900px;
+            display: flex;
+            justify-content: center;
+            position: relative;
+        }
+        .btn-menu-wrapper{
+            width: 100%;
+            border-top: solid 2px #fff;
+            border-left: solid 2px #fff;
+            border-bottom: solid 2px #fff;
+            text-align: center;
+            flex:1;
+            position: relative;
+        }
+        .btn-menu-wrapper>span {
+            padding: 20px;
+            color: #fff;
+            display: inline-block;
+        }
+        .btn-menu-wrapper:last-child{
+            border-right: solid 2px #fff;
+        }
+        
+        .btn-menu-wrapper:hover{
+            background-color: #fff;
+            cursor: pointer;
+        }
+        .btn-menu-wrapper:hover span{
+            color: #333;
+            height: 100px;
+        }
+        .btn-menu-wrapper:hover>span+div {
+            display: block;
+        }
+        .btn-menu-wrapper>span+div {
+            border: solid 1px #000;
+            display: none;
+            position: absolute;
+            top: 79px;
+        }
+
+        .btn-menu-wrapper>span+div>div {
+            padding: 8px 15px;
+            background-color: #fff;
+        }
+
+        .btn-menu-wrapper>span+div>div+div {
+            border-top: 1px solid #000;
+        }
+        .menu-items{
+            width: 100%;
+        }
+        .menu-items > div:hover{
+            background-color: #ddd;
+        }
+        .body-container{
+            display: flex;
+        }
+        .left-column{
+            width: calc((100% - 900px)/2);
+            display: flex;
+            flex-direction: column;
+            border-right: solid 2px #333;
+            height: 100vh;
+        }
+        .socials{
+            padding: 10px 20px;
+            border-top: solid 2px #333;
+            border-left: solid 2px #333;
+            display: block;
+            color: #333;
+        }
+        .socials:last-child{
+            border-bottom: solid 2px #333;
+        }
+        .socials:first-child{
+            margin-top: 40px;
+        }
+        a{
+            text-decoration: none;
+        }
+        .socials:hover{
+            background-color: #ddd;
+        }
+        .content-container{
+            background-color: #cccccc;
+            width: calc(100% - (100% - 900px)/2);
+        }
+        .content{
+            max-width: calc(900px - 900px/7);
+            margin-left: calc(900px/7);
+            margin-top: 40px;
+            background-color: #fff;
+            border: solid 2px #333;
+            width: 100%;
+        }
+        .content p{
+            margin-top: 20px;
+            margin-left: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="mega-menu">
+        <div class="mega-menu-wrapper">
+            <div class="btn-menu-wrapper">
+                <span>Home</span>
+            </div>
+            <div class="btn-menu-wrapper">
+                <span>
+                    About us
+                </span>
+                <div class="menu-items">
+                    <div>coffee</div>
+                    <div>water</div>
+                    <div>juice</div>
+                </div>
+            </div>
+            <div class="btn-menu-wrapper">
+                <span>Contact</span>
+            </div>
+            <div class="btn-menu-wrapper">
+                <span>CSS</span>
+            </div>
+            <div class="btn-menu-wrapper">
+                <span>Javascript</span>
+            </div>
+            <div class="btn-menu-wrapper">
+                <span>PHP</span>
+            </div>
+            <div class="btn-menu-wrapper">
+                <span>Other</span>
+            </div>
+        </div>
+    </div>
+    <div class="body-container">
+        <div class="left-column">
+            <a class="socials" href="https://www.facebook.com/?locale=vi_VN" target="_blank">
+                Facebook
+            </a>
+            <a class="socials" href="#" target="_blank">
+                Youtube
+            </a>
+            <a class="socials" href="#" target="_blank">
+                Instagram
+            </a>
+        </div>
+        <div class="content-container">
+            <!-- day la phan mau xam -->
+             <div class="content">
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto in tempore placeat aut recusandae. Veniam odit autem at voluptas sunt? Debitis suscipit est nobis beatae maiores velit dignissimos natus explicabo.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto in tempore placeat aut recusandae. Veniam odit autem at voluptas sunt? Debitis suscipit est nobis beatae maiores velit dignissimos natus explicabo.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto in tempore placeat aut recusandae. Veniam odit autem at voluptas sunt? Debitis suscipit est nobis beatae maiores velit dignissimos natus explicabo.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto in tempore placeat aut recusandae. Veniam odit autem at voluptas sunt? Debitis suscipit est nobis beatae maiores velit dignissimos natus explicabo.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto in tempore placeat aut recusandae. Veniam odit autem at voluptas sunt? Debitis suscipit est nobis beatae maiores velit dignissimos natus explicabo.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto in tempore placeat aut recusandae. Veniam odit autem at voluptas sunt? Debitis suscipit est nobis beatae maiores velit dignissimos natus explicabo.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto in tempore placeat aut recusandae. Veniam odit autem at voluptas sunt? Debitis suscipit est nobis beatae maiores velit dignissimos natus explicabo.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto in tempore placeat aut recusandae. Veniam odit autem at voluptas sunt? Debitis suscipit est nobis beatae maiores velit dignissimos natus explicabo.
+                </p>
+             </div>
+        </div>
+    </div>
+</body>
+
+</html>
